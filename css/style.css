@@ -210,6 +210,23 @@ textarea {
   font-size: inherit;
   line-height: inherit; }
 
+.button-upstream {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db; /* Azul */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el botón */
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+}
+.button-separation{
+  padding: 5%;
+}
+/* Cambia el color del botón al pasar el ratón sobre él */
+.button-upstream:hover {
+    background-color: #2980b9; /* Azul más claro */
+}
 button,
 input {
   overflow: visible; }
@@ -8453,6 +8470,21 @@ h1, h2, h3, h4, h5,
     opacity: .1;
     width: 50%;
     background: #3e64ff; }
+
+.overlay-upstream {
+  background-size: cover; /* o 'contain' dependiendo de tu preferencia */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      opacity: .9;}  
+
   .hero-wrap .text {
     width: 100%; }
 
@@ -8497,13 +8529,18 @@ h1, h2, h3, h4, h5,
     .slider-text .breadcrumbs span i {
       color: rgba(0, 0, 0, 0.8); }
     .slider-text .breadcrumbs span a {
-      color: #3e64ff; }
+      color: white; }
       .slider-text .breadcrumbs span a:hover, .slider-text .breadcrumbs span a:focus {
         color: #3e64ff; }
         .slider-text .breadcrumbs span a:hover i, .slider-text .breadcrumbs span a:focus i {
           color: #3e64ff; }
 
-.slider-text .bread {
+.slider-text {
+  font-weight: 700;
+  color: #000000;
+  font-size: 60px; }
+
+.bread {
   font-weight: 700;
   color: #000000;
   font-size: 60px; }
@@ -9114,6 +9151,8 @@ textarea.form-control {
   .about-author .desc h3 {
     font-size: 24px; }
 
+
+
 .ftco-section {
   padding: 0em 0;
   position: relative; }
@@ -9121,6 +9160,13 @@ textarea.form-control {
     .ftco-section {
       padding: 6em 0; } }
 
+.ftco-section-upstream{
+  padding: 5em 0;
+  position: relative; }
+  @media (max-width: 767.98px) {
+    .ftco-section-upstream {
+      padding: 5em 0; } }
+      
 .ftco-no-pt {
   padding-top: 0 !important; }
 
